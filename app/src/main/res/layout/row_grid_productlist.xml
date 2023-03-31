@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/margin_10"
+    android:layout_margin="@dimen/margin_4"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relativeLay"
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_6"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imageView"
+            android:layout_height="140sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Grow Bag this is wonder full"
+            android:paddingLeft="@dimen/margin_10"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imageView"
+            android:textSize="@dimen/margin_18"
+            android:id="@+id/tvTitle"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="   Add    "
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_60"
+            android:layout_marginTop="@dimen/margin_1"
+            android:textSize="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:background="@drawable/border_layout"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvAddtoshop"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Grow Bag this is wonder full Bag this is wonder full Bag this is wonder full"
+            android:paddingLeft="@dimen/margin_10"
+            android:maxLines="2"
+            android:textColor="@color/colorGray"
+            android:layout_below="@+id/tvTitle"
+            android:id="@+id/tvTitleDesc"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rs 120.00"
+            android:textSize="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_1"
+            android:paddingLeft="@dimen/margin_10"
+            android:maxLines="2"
+            android:layout_below="@+id/tvTitleDesc"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tvOfferPrice"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rs 120.00"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_1"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_below="@+id/tvTitleDesc"
+            android:layout_toRightOf="@+id/tvOfferPrice"
+            android:id="@+id/tvMrp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="40 % Off"
+            android:layout_marginTop="@dimen/margin_1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_10"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_12"
+            android:layout_below="@+id/tvOfferPrice"
+            android:id="@+id/tvDiscount"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="5.0"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/margin_12"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="@dimen/margin_1"
+            android:maxLines="2"
+            android:paddingRight="@dimen/margin_10"
+            android:textColor="@color/white"
+            android:drawablePadding="4sp"
+            android:drawableRight="@drawable/ic_baseline_star_border_24"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@+id/tvMrp"
+            android:id="@+id/tvRatings"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Nilesh Kalokhe Pune"
+            android:paddingLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_1"
+            android:textSize="@dimen/margin_12"
+            android:maxLines="2"
+            android:textColor="@color/colorGray"
+            android:layout_toRightOf="@+id/tvRatings"
+            android:layout_below="@+id/tvMrp"
+            android:id="@+id/tvVendorName"
+            android:layout_height="wrap_content"/>
+
+     </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

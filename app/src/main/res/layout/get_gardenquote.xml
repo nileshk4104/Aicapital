@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_4"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_4"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Select Garden type"
+        android:padding="@dimen/margin_4"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10"
+        android:layout_margin="@dimen/margin_4"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rdBalcony"
+            android:textStyle="bold"
+            android:text="Balcony"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rdTerrace"
+            android:text="Terrace"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rdOutdoor"
+            android:text="Outdoor"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_layout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/margin_4"
+        android:id="@+id/tilBuildingType"
+        android:hint="Building type"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_layout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/margin_4"
+        android:hint="Number of floor "
+        android:id="@+id/tilNoOfFloor"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:maxLength="2"
+            android:id="@+id/edNoOfFloor"
+
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_layout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/margin_4"
+        android:hint="Terrace length in foot"
+        android:id="@+id/tilLength"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_layout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/margin_4"
+        android:id="@+id/tilWidth"
+        android:hint="Terrace width in foot"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:maxLength="2"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_layout"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/margin_4"
+        android:id="@+id/tilAddress"
+        android:hint="Current Address"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLines="4"
+            android:id="@+id/edAddressLine"
+            android:drawableRight="@drawable/ic_baseline_location_on_24"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="GET CALL BACK "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/green_button_background"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

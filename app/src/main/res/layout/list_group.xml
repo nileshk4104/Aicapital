@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_4"
+    android:padding="10dp"
+    android:background="#F0F0F0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:textSize="14dp"
+            android:text="Leve 1"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lblEarning"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="RS 00.00 / mo"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/L1"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/margin_12"
+            android:textStyle="bold"
+            android:text="FREE"
+            android:textColor="@color/green_color"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="ACTIVATION BONUS"
+            android:textSize="@dimen/margin_12"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/margin_12"
+            android:text="SMART ECOMMERCE"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/L2"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/tvTokens"
+            android:textColor="@color/green_color"
+            android:textStyle="bold"
+            android:text="10 SRT"
+            android:textSize="@dimen/margin_12"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tvActivation"
+            android:textSize="@dimen/margin_12"
+
+            android:textColor="@color/black"
+            android:text="0"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="@dimen/margin_12"
+            android:layout_weight="1"
+            android:id="@+id/tvSmartEcommerce"
+            android:textColor="@color/black"
+            android:text="0"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

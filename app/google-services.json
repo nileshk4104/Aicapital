@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "210553012253",
+    "project_id": "a-i-capital",
+    "storage_bucket": "a-i-capital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210553012253:android:37376ddb3970dfb9f246f4",
+        "android_client_info": {
+          "package_name": "com.tech.aicapital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210553012253-lbbenh2kkc4r9omrg1sjhri19mlfdanc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEvJNJ5mWAhnQeAaPD6X6WFcC5cylaCuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210553012253-lbbenh2kkc4r9omrg1sjhri19mlfdanc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

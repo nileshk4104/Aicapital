@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:id="@+id/tvNoData"
+          android:layout_height="wrap_content"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="match_parent">
+          <ImageView
+              android:layout_width="match_parent"
+              android:id="@+id/ivNoRecordFound"
+              android:visibility="gone"
+              android:layout_height="wrap_content" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/L1"
+              android:visibility="gone"
+              android:background="@color/black"
+              >
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="@dimen/margin_6"
+                  android:text=""
+                  android:textColor="@color/black"
+                  android:textStyle="bold" />
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="@dimen/margin_6"
+                  android:text="EMI"
+                  android:textColor="@color/white"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="4"
+                  android:text="LOAN"
+                  android:padding="@dimen/margin_6"
+                  android:background="@color/red"
+                  android:gravity="center"
+                  android:textColor="@color/black"
+                  android:textStyle="bold" />
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="3"
+                  android:text="INTREST"
+                  android:padding="@dimen/margin_6"
+                  android:background="@color/green_colorr"
+                  android:gravity="center"
+                  android:textColor="@color/black"
+                  android:textStyle="bold" />
+
+
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:padding="@dimen/margin_6"
+                  android:textColor="@color/white"
+                  android:textStyle="bold" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:id="@+id/L2"
+              android:paddingLeft="@dimen/margin_10"
+              android:visibility="gone"
+              android:background="@color/black"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:visibility="gone"
+                  android:id="@+id/tvDateTime"
+                  android:text="Date"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/tvSaving"
+                  android:text="Saving"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/tvPaidLoan"
+                  android:text="Paid"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:text="Remain."
+                  android:id="@+id/tvRemainLoan"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:text="Intrest"
+                  android:id="@+id/tvPaidIntrest"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+
+
+
+
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:paddingTop="@dimen/margin_10"
+              android:id="@+id/L3"
+              android:visibility="gone"
+              android:paddingBottom="@dimen/margin_8"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1.5"
+                  android:maxLength="10"
+                  android:layout_margin="@dimen/margin_2"
+                  android:textSize="@dimen/margin_12"
+                  android:textStyle="bold"
+                  android:text="Date"
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/margin_12"
+                  android:textStyle="bold"
+                  android:id="@+id/tvPre"
+                  android:text="Prev."
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/green_color"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/margin_12"
+                  android:textStyle="bold"
+                  android:id="@+id/tvCredit"
+                  android:text="CR+" />
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/tvDebit"
+                  android:textSize="@dimen/margin_12"
+                  android:textStyle="bold"
+                  android:text="DR-."
+                  android:textColor="@color/red"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/tvRemain"
+                  android:textSize="@dimen/margin_12"
+                  android:textStyle="bold"
+                  android:text="Avail."
+                  android:textColor="@color/black"
+                  android:layout_height="wrap_content"/>
+
+
+
+          </LinearLayout>
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:id="@+id/recyclerView"
+              android:layout_marginBottom="@dimen/margin_40"
+              android:layout_height="wrap_content">
+          </androidx.recyclerview.widget.RecyclerView>
+          <pl.droidsonroids.gif.GifImageView
+              android:layout_width="match_parent"
+              android:src="@drawable/nodata"
+              android:id="@+id/ivImageNodata"
+              android:visibility="gone"
+              android:layout_gravity="center"
+              android:layout_height="match_parent"/>
+
+          <Button
+              android:layout_width="match_parent"
+              android:id="@+id/btnInterstetial"
+              android:textColor="@color/white"
+              android:visibility="gone"
+              android:text=""
+              android:background="@drawable/green_button_background"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+
+
+  </RelativeLayout>
+
+</ScrollView>

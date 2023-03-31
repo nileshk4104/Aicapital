@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:visible="false"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/navigation_quiz"
+        android:visible="false"
+        android:icon="@drawable/ic_baseline_ballot_24"
+        android:title="My stores" />
+    <item
+        android:id="@+id/navigation_analysis"
+        android:icon="@drawable/ic_baseline_speed_24"
+        android:title="Ecommerce" />
+
+    <item
+        android:id="@+id/navigation_ngo"
+        android:visible="false"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="My Orders" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="History" />
+
+
+</menu>

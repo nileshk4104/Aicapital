@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_4"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Add Product "
+        android:gravity="center"
+        android:id="@+id/tvProductname"
+        android:padding="@dimen/margin_2"
+        android:layout_height="wrap_content"/>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:hint="M.R.P."
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edProductMrp"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:hint="Discount"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edProductDiscount"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:hint="Unit Value"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edProductUnitValue"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:hint="Unit"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edProductUnit"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

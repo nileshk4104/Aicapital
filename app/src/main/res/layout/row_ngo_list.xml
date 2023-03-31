@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_4"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_4"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:paddingLeft="@dimen/margin_6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/margin_6"
+                android:maxLines="1"
+                android:id="@+id/tvOrganizerName"
+                android:textSize="@dimen/margin_18"
+                android:text="Ranjangao Merathon Exhibition"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:paddingLeft="@dimen/margin_6"
+                android:maxLines="2"
+                android:textColor="@color/red_btn_bg_color"
+
+                android:id="@+id/tvLocation"
+                android:text="In Ranjangao, Pune"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="16"
+            android:visibility="gone"
+            android:background="@color/green_color"
+            android:drawablePadding="@dimen/margin_4"
+            android:drawableLeft="@drawable/ic_baseline_star_half_24"
+            android:gravity="center"
+            android:paddingRight="@dimen/margin_10"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+        <ImageView
+        android:layout_width="@dimen/margin_60"
+            android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="@dimen/margin_60">
+    </ImageView>
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/defa"
+            android:id="@+id/ivImagePhoto"
+            android:layout_height="220sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_4"
+            android:textSize="@dimen/margin_16"
+            android:maxLines="3"
+            android:text="Rasik Dhariwal Institute and Mahaganpati foundation organised re  terms and conditions are ging fine with terms and conditions are ging fine with"
+
+            android:id="@+id/tvDescription"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_4"
+                android:id="@+id/tvPostedDate"
+                android:text="23-02-2020   "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_4"
+                android:id="@+id/tvExpiry"
+                android:text="7 Days Remain "
+                android:gravity="right"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_6"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Free"
+                android:layout_margin="@dimen/margin_1"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_4"
+                android:gravity="center|left"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Book Now"
+                android:layout_margin="@dimen/margin_1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="@dimen/margin_4"
+                android:textSize="@dimen/margin_16"
+                android:gravity="center|right"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

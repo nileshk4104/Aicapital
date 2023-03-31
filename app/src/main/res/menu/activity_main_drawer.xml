@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_addFriend"
+            android:visible="false"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Add Friends " />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_access_time_black_24dp"
+            android:title="Todays Events" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_baseline_emoji_events_24"
+            android:title="Quiz" />
+        <item
+            android:id="@+id/nav_quiz_rools"
+            android:icon="@drawable/ic_baseline_extension_24"
+            android:title="Quiz Rules" />
+    </group>
+
+    <item android:title="Social ">
+        <menu>
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="@string/menu_facebook" />
+            <item
+                android:id="@+id/nav_insta"
+                android:icon="@drawable/ic_filter_center_focus_black_24dp"
+                android:title="@string/menu_instagram" />
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_ondemand_video_black_24dp"
+                android:title="Youtube" />
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_termsandc"
+                android:icon="@drawable/ic_assignment_black_24dp"
+                android:title="@string/menu_tandc" />
+            <item
+                android:id="@+id/nav_pap"
+                android:icon="@drawable/ic_assignment_black_24dp"
+                android:title="@string/menu_pp" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/menu_signout" />
+        </menu>
+    </item>
+
+</menu>

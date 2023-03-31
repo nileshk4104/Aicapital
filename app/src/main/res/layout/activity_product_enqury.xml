@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnEnquiry"
+        android:padding="@dimen/margin_6"
+        android:text="SUBMIT ENQIRY"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="@dimen/margin_1"
+            android:paddingBottom="@dimen/margin_4"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:layout_below="@+id/addToCart"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/margin_24"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:id="@+id/tv_menu_name"
+                    android:paddingLeft="@dimen/margin_2"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="description"
+                    android:id="@+id/tvDescription"
+                    android:gravity="left"
+                    android:textSize="@dimen/margin_16"
+                    android:layout_height="wrap_content" />
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:visibility="gone"
+                    android:id="@+id/ratingBar"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Buy now"
+                    android:visibility="gone"
+                    android:id="@+id/tvBuy"
+                    android:layout_margin="@dimen/margin_4"
+                    android:padding="@dimen/margin_4"
+                    android:background="@drawable/border_layout"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_4"
+                android:scaleType="fitXY"
+                android:src="@drawable/defa"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/levelButton2"
+                android:gravity="center"
+                android:layout_height="245dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_below="@+id/levelButton2"
+                android:id="@+id/addToCart"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3.5"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="6567"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/margin_24"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvPrice"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="634.98"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/margin_16"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvMrpPrice"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Buy now"
+                        android:visibility="gone"
+                        android:id="@+id/tvunit"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/margin_4"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/margin_40"
+                android:text=" 12% Off "
+                android:textStyle="bold"
+                android:padding="@dimen/margin_6"
+                android:textSize="@dimen/margin_12"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:background="@drawable/border_green_color"
+                android:layout_gravity="center"
+                android:id="@+id/tvPriceDiscount"
+                android:layout_margin="@dimen/margin_6"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

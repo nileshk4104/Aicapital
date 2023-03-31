@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_2"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+    android:padding="@dimen/margin_4"
+    android:background="#F8F8F8"
+    android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_4"
+            android:src="@drawable/ic_baseline_account_box_24" />
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:text="Nilesh Kalokhe"
+            android:textColor="@color/black"
+            android:textSize="@dimen/margin_12"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCustomerName"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:maxLines="1"
+            android:text="ENGINEER"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/margin_12" />
+
+        <TextView
+            android:id="@+id/tvLastFollowup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWork"
+            android:layout_toRightOf="@+id/circleImageView"
+            android:maxLines="1"
+            android:text="Last Followup "
+            android:textSize="@dimen/margin_10" />
+
+
+        <ImageView
+            android:id="@+id/viewWhatsapp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_12"
+            android:background="@drawable/whatsapp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

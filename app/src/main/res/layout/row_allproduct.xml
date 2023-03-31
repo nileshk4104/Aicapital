@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_2"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingLeft="@dimen/margin_4"
+        android:paddingRight="@dimen/margin_4"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:id="@+id/proImage"
+            android:padding="@dimen/margin_4"
+            android:layout_height="60dp"/>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_8"
+            android:paddingRight="@dimen/margin_8"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvUsername"
+                android:text="pro name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvUserId"
+                android:textStyle="bold"
+                android:textSize="@dimen/margin_10"
+                android:maxLines="2"
+                android:textColor="@color/green"
+                android:text="Rs 320 per 1 / Kg "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvUserMobile"
+                android:textColor="@color/black"
+                android:text=""
+                android:textSize="@dimen/margin_12"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvDateTime"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="12 Kg "
+                android:textSize="@dimen/margin_16"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="70sp"
+            android:id="@+id/tvStatus"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textSize="@dimen/margin_12"
+            android:text="Active"
+            android:layout_height="30sp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

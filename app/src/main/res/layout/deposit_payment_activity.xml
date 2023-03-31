@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_4"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_4"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPlanDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_6"
+                android:padding="@dimen/margin_4"
+                android:text=" New Plan " />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvPaymentDetails"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selectPlan"
+                    android:padding="@dimen/margin_6"
+                    android:text=" "
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/ivQrcode"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectPlan"
+                android:layout_margin="@dimen/margin_6"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="@dimen/margin_6"
+                android:text="वरील बँक माहितीवर रक्कम जमा करून त्याचा स्क्रिनशॉट व ट्रांझ्याक्शन पाठवावा  "
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_9" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiAmount"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPaymentDetails"
+                android:layout_margin="@dimen/margin_6"
+                android:elevation="@dimen/margin_6"
+                android:textColorHint="@color/colorGray">
+
+                <EditText
+                    android:id="@+id/edAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorGray"
+                    android:hint="AMOUNT"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiTransactionNumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiAmount"
+                android:layout_margin="@dimen/margin_6"
+                android:elevation="@dimen/margin_6"
+                android:textColorHint="@color/colorGray">
+
+                <EditText
+                    android:id="@+id/edTransactionNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorGray"
+                    android:hint="Ref no / Transaction ID"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/titleAttachScreenshot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiTransactionNumber"
+                android:layout_margin="@dimen/margin_6"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@color/white"
+                android:padding="@dimen/margin_4"
+                android:text="Attach Screenshot" />
+
+            <ImageView
+                android:id="@+id/ivScrrenShot"
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/titleAttachScreenshot"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/defa" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:text="I agree to "
+                    android:id="@+id/chkAgree"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Terms and Conditions"
+                    android:textColor="@color/blue"
+                    android:id="@+id/tvTermsandConditions"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnDepositPayment"
+                    android:background="@drawable/border_layout_selected"
+                    android:text="Submit"
+                    android:textColor="@color/white" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAdminWhatsapp"
+                    android:background="@drawable/border_layout_selected"
+                    android:text="Admin Whatsapp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

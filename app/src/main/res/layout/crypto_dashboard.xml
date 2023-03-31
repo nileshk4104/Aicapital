@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_margin="@dimen/margin_12"
+        app:cardBackgroundColor="#000010"
+        app:cardCornerRadius="@dimen/margin_12"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="170sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:src="@drawable/ait" />
+
+            <TextView
+                android:id="@+id/tvTitleWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="right"
+                android:text="Available Balance"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvTitleWalletValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleWallet"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="right"
+                android:text="$ 0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvCustomerName"
+                android:layout_marginStart="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_12"
+                android:text="$ 0.00"
+                android:textColor="@color/green_colorr"
+                android:textSize="@dimen/margin_24"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCustomerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:maxLines="1"
+                android:paddingRight="@dimen/margin_12"
+                android:text="Today profit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/margin_20"
+                android:layout_below="@+id/tvTitleWalletValue"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:background="@drawable/border_layout_selected"
+                android:paddingLeft="@dimen/margin_12"
+                android:paddingTop="@dimen/margin_2"
+                android:paddingRight="@dimen/margin_12"
+                android:paddingBottom="@dimen/margin_2"
+                android:text="Withdraw"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_16" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginTop="1dp"
+            android:padding="@dimen/margin_4">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

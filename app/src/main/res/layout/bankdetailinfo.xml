@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_20"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/tvBalance"
+                android:textSize="@dimen/margin_24"
+                android:text="0.0"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/margin_12"
+                android:text="ACCOUNT BALANCE"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_8"
+            android:text="BRANCH NAME"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/margin_14"
+            android:textStyle="bold"
+            android:id="@+id/BankAddress"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/radioGroup"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Bank"
+                android:id="@+id/rdB"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Google"
+                android:id="@+id/rdG"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/rdP"
+                android:text="Phone Pay"
+                android:layout_height="match_parent"/>
+
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="BANK IFSC CODE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_18"
+                android:textStyle="bold"
+                android:id="@+id/edBankIfsc"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+            android:visibility="gone"
+            android:id="@+id/tilBankName"
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint=" Bank Name "
+                android:textColor="@color/black"
+                
+                android:textStyle="bold"
+                android:id="@+id/edBankName"
+                android:enabled="false"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edAccountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/float_transparent"
+                android:hint="ACCOUNT NUMBER"
+                android:inputType="number"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+            android:id="@+id/tiLConfirmAccountNo"
+
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:textColor="@color/black"
+                
+                android:textStyle="bold"
+                android:maxLength="20"
+                android:id="@+id/edConfirmAccountNo"
+                android:hint="CONFIRM ACCOUNT"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_18"
+                android:textStyle="bold"
+                android:maxLength="11"
+                android:id="@+id/edGooglePay"
+                android:hint="PAN CARD NO"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+            android:visibility="gone"
+            android:id="@+id/tiLAmount"
+
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:textColor="@color/black"
+                
+                android:textStyle="bold"
+
+                android:maxLength="4"
+                android:id="@+id/edAmount"
+                android:hint="Amount"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+            android:visibility="gone"
+
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/edAadhar"
+                android:hint="Enter Aadhar Number"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_2"
+
+            android:visibility="gone"
+            android:background="@drawable/border_layout"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Enter Pan Card Id"
+                android:id="@+id/edPanNo"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="match_parent"
+    android:textSize="@dimen/margin_10"
+    android:padding="@dimen/margin_8"
+    android:textColor="@color/red"
+    android:text="Amount will be deposit in specified bank account within 72 working hours, please keep patience, you will get notified as the transaction succeed"
+    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Update"
+            android:id="@+id/btnSubmit"
+            android:textColor="@color/white"
+            android:background="@drawable/green_button_background"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</ScrollView>

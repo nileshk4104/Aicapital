@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/margin_4"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="MY SR SCORE 750"
+            android:id="@+id/tvScore"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardViewDeposit"
+            android:layout_below="@+id/tvScore"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_6"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_8"
+                android:layout_height="wrap_content">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="40sp"
+                    android:src="@drawable/scart"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_height="40sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Smart Ecommerce Deposit"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="RS 0.00"
+                        android:id="@+id/tvTotalDeposit"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:textSize="@dimen/margin_24"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Earn 5% to 10%  Profit sharing on smart e-commerce deposit. Amount deposited will 100% refundable*. "
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="  View details   "
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/margin_8"
+                        android:paddingBottom="@dimen/margin_2"
+                        android:paddingTop="@dimen/margin_2"
+                        android:paddingRight="@dimen/margin_8"
+                        android:background="@drawable/border_layout_selected"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardViewDeposit2"
+            android:layout_below="@+id/cardViewDeposit"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_6"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_8"
+                android:layout_height="wrap_content">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="40sp"
+                    android:src="@drawable/reward"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_height="40sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Smart Ecommerce Earning"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="RS 0.00"
+                        android:id="@+id/tvSpeedView"
+                        android:textSize="@dimen/margin_24"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Earning wallet can be transfered into main wallet"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="PURCHASE"
+                            android:id="@+id/btnAddMoney"
+                            android:textSize="@dimen/margin_10"
+                            android:layout_margin="@dimen/margin_4"
+                            android:background="@drawable/blue_button_background"
+                            android:layout_height="@dimen/margin_32"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/btnWithdraw"
+                            android:text="withdraw"
+                            android:textSize="@dimen/margin_10"
+                            android:layout_margin="@dimen/margin_4"
+                            android:background="@drawable/blue_button_background"
+                            android:layout_height="@dimen/margin_32"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardView"
+        android:layout_below="@+id/cardViewDeposit2"
+        app:cardCornerRadius="@dimen/margin_10"
+        android:layout_margin="@dimen/margin_6"
+        android:layout_height="wrap_content">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_height="190sp" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/tvTitle1"
+        android:textColor="@color/black"
+        android:layout_below="@+id/cardView"
+        android:background="@color/white"
+        android:layout_height="wrap_content"/>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chartPie"
+        android:layout_below="@+id/tvTitle1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="250sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/chartPie"
+        android:padding="@dimen/margin_4"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/margin_60"
+        android:orientation="horizontal"
+        android:id="@+id/lspeed"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="@dimen/margin_10"
+            android:layout_margin="@dimen/margin_4"
+            app:cardCornerRadius="@dimen/margin_8"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="PURCHASE AND RESELL"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+
+                <com.github.anastr.speedviewlib.SpeedView
+                    android:id="@+id/speedView"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="220sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/margin_10"
+                    android:gravity="center"
+                    android:text="AVAILABLE TO WITHDRAW"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/margin_40"
+                        android:src="@drawable/coins"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/margin_2"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/margin_20"
+                        android:text="0.00"
+                        android:layout_below="@+id/speedView"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="SMART ECOMMERCE"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <Button-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="PURCHASE"-->
+<!--                        android:id="@+id/btnAddMoney"-->
+<!--                        android:textSize="@dimen/margin_10"-->
+<!--                        android:layout_margin="@dimen/margin_4"-->
+<!--                        android:background="@drawable/blue_button_background"-->
+<!--                        android:layout_height="@dimen/margin_32"/>-->
+<!--                    <Button-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/btnWithdraw"-->
+<!--                        android:text="withdraw"-->
+<!--                        android:textSize="@dimen/margin_10"-->
+<!--                        android:layout_margin="@dimen/margin_4"-->
+<!--                        android:background="@drawable/blue_button_background"-->
+<!--                        android:layout_height="@dimen/margin_32"/>-->
+
+<!--                </LinearLayout>-->
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_4"
+            android:id="@+id/cardCredit"
+            app:cardCornerRadius="@dimen/margin_8"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#EEEEEE"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/red"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="GROUP ACCOUNT"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+
+                <com.github.anastr.speedviewlib.SpeedView
+                    android:id="@+id/speedView2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="220sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/margin_10"
+                    android:gravity="center"
+                    android:text="CURRENT CREDIT AMOUNT"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvSpeedView2"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/margin_20"
+                    android:gravity="center"
+                    android:text="Rs 0.00"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/red"
+                    android:padding="@dimen/margin_2"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="CREDIT SCORE"
+                    android:layout_below="@+id/speedView"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Apply"
+
+                        android:textSize="@dimen/margin_10"
+                        android:layout_margin="@dimen/margin_4"
+                        android:background="@drawable/blue_button_background"
+                        android:layout_height="@dimen/margin_32"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Repay"
+                        android:textSize="@dimen/margin_10"
+                        android:layout_margin="@dimen/margin_4"
+                        android:background="@drawable/blue_button_background"
+                        android:layout_height="@dimen/margin_32"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/giFwin"
+                    android:src="@drawable/source"
+                    android:layout_height="380sp"/>
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/reward"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:id="@+id/reward"
+                    android:layout_height="@dimen/margin_90"/>
+                <ImageView
+                    android:layout_width="@dimen/margin_90"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/srcoins"
+                    android:layout_below="@+id/reward"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:padding="@dimen/margin_9"
+                    android:visibility="gone"
+                    android:id="@+id/rewardCoin"
+                    android:layout_height="@dimen/margin_90"/>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="240dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin_32"
+                    android:textColor="@color/black"
+                    android:drawablePadding="@dimen/margin_8"
+                    android:layout_centerInParent="true"
+                    android:text="Congratulation\nYou have won" />
+                <in.myinnos.androidscratchcard.ScratchCard
+                    android:id="@+id/scratchCard"
+                    android:layout_width="match_parent"
+                    app:scratchDrawable="@drawable/scratch"
+                    android:layout_height="380sp"
+                    android:layout_centerInParent="true"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/margin_40"
+                    android:id="@+id/ivCancel"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_baseline_cancel_24"
+                    android:layout_height="@dimen/margin_40"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

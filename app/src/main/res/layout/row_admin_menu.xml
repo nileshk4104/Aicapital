@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_2"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="@dimen/margin_10"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/margin_42"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_12"
+                android:id="@+id/imageView"
+                android:layout_height="@dimen/margin_42"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Total Members"
+                android:padding="@dimen/margin_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_10"
+                android:id="@+id/tvTotalMembers"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_16"
+                android:id="@+id/tvTotalCount"
+                android:paddingBottom="@dimen/margin_10"
+                android:gravity="center"
+                android:text="120"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

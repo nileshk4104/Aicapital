@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="MAHARASHTRA"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/border_layout"
+            android:padding="@dimen/margin_8"
+            android:layout_margin="@dimen/margin_4"
+            
+            android:id="@+id/tvState"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="Select District"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/border_layout"
+            android:padding="@dimen/margin_8"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+            android:textColor="@color/black"
+            android:id="@+id/tvDistrict"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Select Tehasil"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+            android:padding="@dimen/margin_8"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/border_layout"
+            android:id="@+id/tvTehasil"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/margin_4"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/border_layout"
+            android:textColor="@color/black"
+            android:padding="@dimen/margin_8"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:id="@+id/tvVillage"
+            android:text="Select Village"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="GROUP NAME"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edGroupName"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="MONTHLY SAVING EMI"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLength="6"
+            android:id="@+id/edMonthlyEmi"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="MONTHLY R.O.I."
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLength="2"
+            android:id="@+id/edGroupRoi"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="MEETING DATE"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLength="2"
+            android:id="@+id/edDate"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="FINE AMOUNT"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLength="3"
+            android:id="@+id/edFineAmt"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="SECRETARY"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLength="10"
+            android:id="@+id/edSecretery"
+            android:textColor="@color/green"
+            android:drawableRight="@drawable/ic_baseline_phone_android_24"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="SECRETARY NAME"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edSecreteryName"
+            android:textColor="@color/green"
+            android:enabled="false"
+            android:drawableRight="@drawable/ic_baseline_phone_android_24"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="ADMIN"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:maxLength="10"
+            android:id="@+id/edAdmin"
+            android:textColor="@color/green"
+            android:drawableRight="@drawable/ic_baseline_phone_android_24"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:hint="ADMIN NAME"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_layout"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:id="@+id/edAdminName"
+            android:textColor="@color/green"
+            android:drawableRight="@drawable/ic_baseline_phone_android_24"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_8"
+        android:textStyle="bold"
+        android:id="@+id/btnSubmit"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+</LinearLayout>
+</ScrollView>

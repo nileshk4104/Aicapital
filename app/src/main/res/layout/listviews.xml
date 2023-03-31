@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlv"
+        android:visibility="gone"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_8"
+            android:text="Total Profit "
+            android:textColor="@color/black"
+            android:textSize="@dimen/margin_18" />
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvTitle1"
+            android:gravity="right"
+            android:padding="@dimen/margin_8"
+            android:textSize="@dimen/margin_18"
+            android:text="$ 0.0"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle1"
+            android:padding="@dimen/margin_8"
+            android:textSize="@dimen/margin_18"
+            android:text="Todays Profit "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvTitle4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle2"
+            android:layout_toRightOf="@+id/tvTitle3"
+            android:gravity="right"
+            android:padding="@dimen/margin_8"
+            android:text="$ 0.0"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/margin_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_4"
+        android:layout_below="@+id/rlv">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/main_progress"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_below="@+id/recyclerView"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/nodata"
+        android:id="@+id/ivImageNodata"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:id="@+id/tvLinear"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/green_button_background"
+            android:id="@+id/btnAddProduct"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_1"
+            android:text="Add New "
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:background="@drawable/red_button_background"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_1"
+            android:id="@+id/btnAddFromSystem"
+            android:textColor="@color/white"
+            android:text="From System"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

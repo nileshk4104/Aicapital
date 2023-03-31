@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_16"
+        android:id="@+id/tvGroupname"
+        android:text="Group Name "
+        android:textStyle="bold"
+        android:textSize="@dimen/margin_20"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/tvGroupname"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_header"
+        android:visibility="gone"
+        android:layout_below="@+id/tvGroupname"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:text="Date "
+
+            android:id="@+id/tv_dates"
+            android:textSize="@dimen/margin_10"
+            android:textColor="@color/blue"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Total Share"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="EMI"
+            android:textColor="@color/green"
+            android:id="@+id/tv_emi_paid"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="LOAN"
+            android:id="@+id/tv_loan_paid"
+            android:textColor="@color/green"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="INTREST"
+            android:id="@+id/tv_intrest_paid"
+            android:textColor="@color/green"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="FINE"
+            android:id="@+id/tv_fine_paid"
+            android:textColor="@color/green"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="DISTRIBU"
+            android:id="@+id/tv_amt_distributed"
+
+            android:textColor="@color/red"
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:id="@+id/recyclerView"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tvno_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/margin_60"
+            android:text="NO  RECORD PRESENT " />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_header3"
+        android:visibility="gone"
+        android:layout_below="@+id/layout_header2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:text="TOTAl "
+            android:textStyle="bold"
+
+            android:textSize="@dimen/margin_12"
+            android:textColor="@color/blue"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/blue"
+            android:id="@+id/totaltv_uptoshare_paid"
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Share"
+            android:textColor="@color/green"
+            android:id="@+id/totaltv_emi_paid"
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="LOAN"
+            android:id="@+id/totaltv_loan_paid"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="INTREST"
+            android:id="@+id/totaltv_intrest_paid"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="FINE"
+            android:id="@+id/totaltv_fine_paid"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="DISTRIBU"
+            android:id="@+id/totaltv_amt_distributed"
+            android:textStyle="bold"
+
+            android:textColor="@color/red"
+            android:textSize="@dimen/margin_10"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_header4"
+        android:padding="@dimen/margin_4"
+        android:visibility="gone"
+
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_below="@+id/layout_header3"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center|left"
+            android:text="Collection"
+
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_14"
+            android:textColor="@color/green"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/green"
+            android:id="@+id/totaltv_collection"
+            android:gravity="center|left"
+
+            android:textSize="@dimen/margin_14"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Spend"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:gravity="center|left"
+
+            android:textSize="@dimen/margin_14"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/totaltv_distribute"
+            android:textColor="@color/red"
+            android:gravity="center|left"
+
+            android:textSize="@dimen/margin_14"
+            android:padding="@dimen/margin_8"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btnPdf"
+            android:visibility="gone"
+            android:text="Create PDF"
+            android:textSize="@dimen/margin_10"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab_add_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_height="wrap_content"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>

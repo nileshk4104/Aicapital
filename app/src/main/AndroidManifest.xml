@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tech.aicapital">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="icon,android:allowBackup,android:usesCleartextTraffic">
+        <activity
+            android:name=".activities.TypewiseTransactionHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".followups.TransactionHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".followups.DepositPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".followups.MyPaymentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".followups.WithdrawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".followups.AddFundActivity"
+            android:exported="false" />
+        <activity android:name=".followups.TradeDetailsActivity" />
+        <activity android:name=".activities.ArticleDetailsActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent2" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="fcm" />
+
+
+        <service
+            android:name=".notification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+<!--        <receiver-->
+<!--            android:name=".utility.InstallReferrerReceiver"-->
+<!--            android:exported="true">-->
+<!--            &lt;!&ndash;            android:exported="false">&ndash;&gt;-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.android.vending.INSTALL_REFERRER" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CountDownActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyBankDetailsActivity" />
+        <activity android:name=".activities.VideoListActivity" />
+        <activity android:name=".followups.FollowUpHistoryActivity" />
+        <activity android:name=".followups.AddNewCustomerActivity" />
+        <activity android:name=".followups.AddNewFollowupActivity" />
+        <activity android:name=".activities.CategorywiseOfferListActivity" />
+        <activity android:name=".activities.AllArticlesActivity" />
+        <activity android:name=".ytb.VideoViewActivity" />
+        <activity android:name=".ytb.YoutubePlayActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.AddNewRegistrationActivity" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.OtpActivity" />
+        <activity android:name=".followups.CustomerListActivity" />
+        <activity android:name=".activities.WebViewActivity" />
+
+        <activity
+            android:name=".activities.QuizActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WinActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

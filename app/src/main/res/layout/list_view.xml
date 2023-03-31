@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <SearchView
+        android:id="@+id/serach_tabelNo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:focusableInTouchMode="true"
+        app:queryHint="Search Your Product ">
+
+    </SearchView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:visibility="gone"
+        android:id="@+id/searchLayout"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Small"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tvFull"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Full"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="#FF0"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_reg_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="6582589"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/nodata"
+        android:id="@+id/ivImageNodata"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

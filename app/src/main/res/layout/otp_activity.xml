@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_20"
+        android:foregroundGravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:text="Profile Verification"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/vf_code"
+            android:textSize="@dimen/margin_16"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="@dimen/margin_24"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="@dimen/margin_90"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="@dimen/margin_90" />
+        <LinearLayout android:id="@+id/pin_layout"
+            android:layout_width="280dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_40"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+            <EditText android:id="@+id/pin_first_edittext"
+                android:layout_width="0dp"
+                android:layout_margin="@dimen/margin_4"
+                android:layout_weight="1"
+                android:hint="0"
+                android:background="@drawable/border_layout"
+                android:padding="@dimen/margin_6"
+                android:maxLength="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/margin_24"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+            <EditText android:id="@+id/pin_second_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:layout_margin="@dimen/margin_4"
+
+                android:background="@drawable/border_layout"
+                android:padding="@dimen/margin_6"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/margin_24"/>
+            <EditText android:id="@+id/pin_third_edittext"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_margin="@dimen/margin_4"
+
+                android:layout_weight="1"
+                android:background="@drawable/border_layout"
+                android:padding="@dimen/margin_6"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/margin_24" />
+            <EditText android:id="@+id/pin_forth_edittext"
+                android:layout_width="0dp"
+                android:background="@drawable/border_layout"
+                android:padding="@dimen/margin_6"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:layout_margin="@dimen/margin_4"
+
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/margin_24" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pin_layout_hidden"
+            android:layout_width="280dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_layout"
+
+            android:layout_marginTop="@dimen/margin_40"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/pin_hidden_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_4"
+                android:backgroundTint="@color/float_transparent"
+                android:layout_margin="@dimen/margin_4"
+                android:gravity="center_horizontal"
+                android:hint=" -  -  -  -  "
+                android:textSize="@dimen/margin_42"
+                android:cursorVisible="false"
+
+                android:maxLength="4"
+                android:textColor="#FF000000"/>
+
+        </LinearLayout>
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            app:pinBackground="@drawable/border_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            app:pinWidth="45dp"
+            android:textStyle="bold"
+            app:pinHeight="50dp"
+            app:textSize="@dimen/margin_10"
+            app:pinLength="4"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            android:text="Enter your OTP here "
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_24"
+            android:textColor="@color/black"
+            android:id="@+id/ednewPwd"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:hint="Enter New Password"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edConfirmpwd"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/margin_24"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:hint="Set new pin "
+            android:id="@+id/ednewpin"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_10"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_alignParentStart="true">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_6"
+                android:background="@drawable/border_green_color"
+                android:text="Verify"
+                android:id="@+id/button_next_one"
+                android:textColor="@color/white"
+
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_6"
+                android:background="@drawable/border_green_color"
+                android:text="Resend OTP"
+                android:textStyle="bold"
+                android:id="@+id/button_resendotp"
+                android:textColor="@color/white"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

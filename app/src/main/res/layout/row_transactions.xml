@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_8"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/margin_8"
+                android:id="@+id/tvTransType"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="2019-07-01 02:02:45"
+                android:paddingLeft="@dimen/margin_8"
+                android:id="@+id/tvDate"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:paddingLeft="@dimen/margin_8"
+                android:layout_weight="0.1"
+                android:text=""
+                android:id="@+id/tvReferId"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:padding="@dimen/margin_8"
+                android:layout_weight="1.5"
+                android:text="Rs 20"
+                android:textColor="@color/green_color"
+                android:textSize="@dimen/margin_16"
+                android:textStyle="bold"
+                android:id="@+id/tvCreditDebit"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/margin_8"
+                android:id="@+id/tvBalanceTypepre"
+                android:text="Pre : "
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:padding="@dimen/margin_8"
+                android:id="@+id/tvPreBalance"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:text="100"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/margin_8"
+                android:visibility="gone"
+                android:id="@+id/tvBalanceType"
+                android:text="Avail : "
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:padding="@dimen/margin_8"
+                android:visibility="gone"
+                android:textColor="@color/colorBluenila"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Rs 40"
+                android:id="@+id/tvAvail"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

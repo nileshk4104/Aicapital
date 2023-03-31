@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/iv_AddNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_add_24" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frameLayout"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="@dimen/margin_6"
+                android:id="@+id/reHeader"
+                android:layout_margin="@dimen/margin_4"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_8">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/margin_2"
+                        android:src="@drawable/ic_baseline_account_box_24" />
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/circleImageView">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center|left"
+                            android:text="Register Date"
+
+                            android:textSize="@dimen/margin_14" />
+
+                        <TextView
+                            android:id="@+id/tvRegisteredDate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="12-09-2021"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/margin_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/l1"
+                        android:layout_toRightOf="@+id/circleImageView">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center|left"
+
+                            android:text="Education"
+                            android:textSize="@dimen/margin_14" />
+
+                        <TextView
+                            android:id="@+id/tvEducation"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="H.S.C"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/margin_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/l2"
+                        android:layout_toRightOf="@+id/circleImageView">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center|left"
+
+                            android:text="Work"
+                            android:textSize="@dimen/margin_14" />
+
+                        <TextView
+                            android:id="@+id/tvWork"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="Business"
+
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/margin_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/l3"
+                        android:layout_toRightOf="@+id/circleImageView">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            android:gravity="center|left"
+
+                            android:text="Month Income"
+                            android:textSize="@dimen/margin_14" />
+
+                        <TextView
+                            android:id="@+id/tvMi"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text="40000"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/margin_14" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/nodata"
+        android:id="@+id/ivImageNodata"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

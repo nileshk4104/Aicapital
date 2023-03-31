@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_4"
+            app:cardCornerRadius="@dimen/margin_6"
+            android:id="@+id/linear"
+
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="220sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/defa" />
+
+                <TextView
+                    android:id="@+id/tvShopOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_layout_selected"
+                    android:paddingLeft="@dimen/margin_8"
+                    android:layout_margin="@dimen/margin_1"
+                    android:paddingRight="@dimen/margin_8"
+                    android:layout_alignParentRight="true"
+                    android:text="10% Off"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/margin_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/margin_6"
+                    android:visibility="gone"
+                    android:background="@drawable/border_layout"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/margin_4"
+                        android:textSize="@dimen/margin_18"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/tvStoreName"
+                        android:text="NILESH KALOKHE"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/margin_4"
+                            android:textSize="@dimen/margin_16"
+                            android:textColor="@color/black"
+                            android:id="@+id/tvShopMobile"
+                            android:text="9636963696"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/margin_4"
+                        android:textSize="@dimen/margin_16"
+                        android:id="@+id/tvShopAddress"
+                        android:text="Address"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.tech.aicapital.ExpandableHeightGridView
+            android:layout_width="match_parent"
+            android:id="@+id/gridView"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/margin_60"
+            android:numColumns="2"
+            android:layout_below="@+id/linear"
+            android:padding="@dimen/margin_2"
+            android:layout_height="match_parent">
+        </com.tech.aicapital.ExpandableHeightGridView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

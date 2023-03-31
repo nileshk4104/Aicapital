@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_6"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArticleDetailsActivity">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_6"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_2"
+        android:text=""
+        android:textSize="@dimen/margin_18"
+        android:id="@+id/tvTitle"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_4"
+        android:id="@+id/tvDescription"
+        android:textSize="@dimen/margin_16"
+        android:text="india is my country all indians are my brothers and sisters stop all indians are my brothers and sisters stop."
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
+</ScrollView>

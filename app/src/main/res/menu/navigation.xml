@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_baseline_hive_24"
+        android:title="Services" />
+
+    <item
+        android:id="@+id/navigation_ngo"
+        android:icon="@drawable/ic_baseline_currency_bitcoin_24"
+        android:title="Subscribe"/>
+    <item
+        android:id="@+id/navigation_quiz"
+        android:icon="@drawable/ic_baseline_punch_clock_24"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="Account" />
+
+
+</menu>

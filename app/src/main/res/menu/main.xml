@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_scratchcard"
+        android:icon="@drawable/ic_baseline_card_giftcard_24"
+        android:title="Scratch card"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_showvideo"
+        android:icon="@drawable/whatsapp"
+        android:title="Videos"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Notification"
+        android:visible="false"
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notification"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

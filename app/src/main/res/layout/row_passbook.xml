@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_10"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvDateTime"
+        android:maxLength="10"
+        android:layout_marginTop="@dimen/margin_6"
+        android:textSize="@dimen/margin_10"
+        android:textStyle="bold"
+        android:text="2020-11-11"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/tvSaving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="100"
+            android:textColor="@color/green"
+            android:textSize="@dimen/margin_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPaidLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="Paid"
+            android:textColor="#00AA00"
+            android:textSize="@dimen/margin_16"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvPaidIntrest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="Paid"
+            android:textColor="#00AA00"
+            android:textSize="@dimen/margin_16"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvRemainLoan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:text="Remain."
+            android:textColor="#Af00"
+            android:textSize="@dimen/margin_16"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/margin_6"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/margin_10"
+        android:text="Saving"
+        
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/margin_10"
+            android:text="Loan Emi"
+            
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Intrest"
+            
+            android:textSize="@dimen/margin_10"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/margin_10"
+            android:text="Remain loan"
+            
+            android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#EEEEEE"
+        android:layout_margin="@dimen/margin_4"
+        android:layout_height="1sp"></View>
+</LinearLayout>

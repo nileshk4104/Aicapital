@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_4"
+        android:elevation="@dimen/margin_8"
+        android:id="@+id/card1"
+        app:cardCornerRadius="@dimen/margin_2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/ivPlanImage"
+            android:padding="@dimen/margin_6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="XAUUSD"
+                    android:id="@+id/tvEntity"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_14"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/margin_4"
+                    android:textSize="@dimen/margin_12"
+                    android:id="@+id/tvLotSize"
+                    android:textColor="@color/red"
+                    android:gravity="left|center"
+                    android:text=" sell 0.06"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="right|center"
+                    android:id="@+id/tvDateTime"
+                    android:paddingLeft="@dimen/margin_4"
+                    android:textSize="@dimen/margin_12"
+                    android:text="2023-03-10 11:34"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1845.34 ->"
+                    android:id="@+id/tvOpenTrade"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/margin_4"
+                    android:textSize="@dimen/margin_12"
+                    android:text="1850.89"
+                    android:id="@+id/tvCloseTrade"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/margin_4"
+                    android:text="1850.89"
+                    android:id="@+id/tvTradeGain"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

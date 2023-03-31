@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_20"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+
+
+        android:background="@color/red">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/margin_18"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Order Confirmation  "
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_launcher"
+            android:orientation="vertical">
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/margin_18"
+            android:textStyle="bold"
+            android:id="@+id/alertMessage"
+
+
+            android:layout_margin="@dimen/margin_18"
+            android:textColor="@color/black"
+            android:text="Are you sure , You are giving Order ...? "
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+
+           >
+
+
+        <Button
+            android:id="@+id/buttonViewOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text=" Yes"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/buttonGenerateBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

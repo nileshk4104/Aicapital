@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_2"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_6"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="BTC"
+            android:maxLines="1"
+            android:textSize="@dimen/margin_16"
+            android:textStyle="bold"
+            android:id="@+id/tvSymbol"
+            android:textColor="@color/black"
+            android:padding="@dimen/margin_4"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="$24509.090"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:gravity="right"
+            android:id="@+id/tvSymbolPrice"
+            android:padding="@dimen/margin_4"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="5.90%"
+            android:id="@+id/tvPercentage"
+            android:textColor="@color/green"
+            android:paddingLeft="@dimen/margin_4"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="$24509.090"
+            android:visibility="gone"
+            android:id="@+id/tv24Hrsprice"
+            android:paddingLeft="@dimen/margin_4"
+            android:paddingRight="@dimen/margin_4"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

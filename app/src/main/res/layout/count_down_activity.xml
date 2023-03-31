@@ -1,0 +1,268 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/dot_dark_screen5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/margin_90"
+        android:layout_height="@dimen/margin_90"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@mipmap/ic_launcher_round"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="@string/srushti_quote"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_24"
+        app:fontFamily="@font/antic_slab" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="260sp"
+        android:id="@+id/ivCommingSOon"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/comingsoondribbble"
+        android:layout_gravity="center"
+
+        android:layout_height="100sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_days_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Days"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_hour_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hour"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_minute_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Minute"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Second"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_milisecond_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="mili sec"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="First mega quiz on 3rd january 2021"
+        android:gravity="center"
+        android:textColor="@color/colorPurpel"
+        android:id="@+id/btnCheck"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="PRIZE INR. 11,111/- "
+        android:gravity="center"
+        android:textColor="@color/colorPurpel"
+        android:textSize="@dimen/text_size22"
+        android:id="@+id/tvPrize"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/margin_14"
+            android:layout_gravity="center"
+            android:background="@drawable/border_layout"
+            android:padding="@dimen/margin_8"
+            android:layout_margin="@dimen/margin_8"
+            android:text=" Entry Fee  :  Free "
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/margin_14"
+            android:id="@+id/tvJoinNow"
+            android:layout_gravity="center"
+            android:background="@drawable/border_layout"
+            android:padding="@dimen/margin_8"
+            android:layout_margin="@dimen/margin_8"
+            android:text=" Join Now "
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

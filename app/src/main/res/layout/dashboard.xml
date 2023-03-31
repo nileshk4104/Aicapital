@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorGray1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorGray1"
+        android:id="@+id/nestedScrollVIew"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:background="@color/white"
+                android:padding="@dimen/margin_6"
+                android:visibility="gone"
+                android:id="@+id/tvSearchProducts"
+                android:drawablePadding="@dimen/margin_8"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:hint="Search Your Product"
+                android:layout_height="wrap_content"/>
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Register Shop"
+                    android:background="@drawable/blue_button_background"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_store_mall_directory_black_24dp"
+                    android:textSize="@dimen/margin_12"
+                    android:padding="@dimen/margin_12"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/margin_4"
+                    android:gravity="center"
+                    android:id="@+id/tvAddShop"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Delivery Partner"
+                    android:textColor="@color/black"
+                    android:background="@drawable/blue_button_background"
+                    android:drawablePadding="@dimen/margin_2"
+                    android:drawableRight="@drawable/ic_add_circle_black_32dp"
+                    android:textSize="@dimen/margin_12"
+                    android:padding="@dimen/margin_12"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/margin_4"
+                    android:gravity="center"
+                    android:id="@+id/btnReferandEarn"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btnAwardAndReward"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_1"
+                    android:textSize="@dimen/margin_12"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_layout"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_4"
+                    android:text="Award and Reward"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <com.tech.aicapital.ExpandableHeightGridView
+                android:layout_width="match_parent"
+                android:id="@+id/gridView2"
+                android:numColumns="3"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_height="wrap_content">
+            </com.tech.aicapital.ExpandableHeightGridView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:id="@+id/ivViewMore"
+                android:layout_height="120sp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/activity_margin_content"
+                android:paddingBottom="@dimen/activity_margin_content"/>
+            <ProgressBar
+                android:id="@+id/main_progress"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+

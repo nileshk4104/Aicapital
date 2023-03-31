@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/margin_4"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+    android:id="@+id/linear"
+    android:padding="@dimen/margin_4"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+  >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearr"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblListItem"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="Nilesh Kalokhe "
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_14"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+            <TextView
+                android:id="@+id/lblListItemIncome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/margin_10"
+                android:text="LAST WITHDRAW 5 HOURS AGO"
+                android:textSize="7sp"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Rs 10"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="bold"
+                android:id="@+id/tvInstallation"
+                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="10 %"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="bold"
+                android:id="@+id/tvActivation"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Rs 1000"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/margin_14"
+                android:textStyle="bold"
+                android:id="@+id/tvCreditedAmount"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="12-12-2020 12:12:30"
+            android:textSize="@dimen/margin_10"
+            android:id="@+id/tvCreditedDate"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
+
+</LinearLayout>
+

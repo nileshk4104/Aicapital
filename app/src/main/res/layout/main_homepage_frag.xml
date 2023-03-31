@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginVertical="@dimen/margin_10">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSliderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_4"
+                app:cardCornerRadius="@dimen/margin_12"
+                app:cardElevation="@dimen/margin_4">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tvTitleKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardSliderLayout"
+                android:padding="@dimen/margin_6"
+                android:text="KEY HEIGHLIGHTS"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.tech.aicapital.ExpandableHeightGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleKey"
+                android:nestedScrollingEnabled="false"
+                android:numColumns="2"
+                android:orientation="horizontal">
+
+            </com.tech.aicapital.ExpandableHeightGridView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gridView"
+                android:layout_marginTop="@dimen/margin_8">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

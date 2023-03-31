@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tech.aicapital.ExpandableHeightGridView
+            android:layout_width="match_parent"
+            android:id="@+id/gridView3"
+            android:numColumns="2"
+            android:visibility="gone"
+            android:padding="@dimen/margin_1"
+            android:layout_height="wrap_content">
+        </com.tech.aicapital.ExpandableHeightGridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/margin_20"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="@dimen/margin_16"
+                    android:text="Address Confirmation"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Name "
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edName"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="Flat no , Floor no "
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/edFlatNo"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="Building Name"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/edBuildingName"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Address Line 1"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edAddressLine"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Address Line 2"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edAddressLinetwo"
+                        android:text="-"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Select Society"
+                    android:background="@drawable/border_layout"
+                    android:padding="@dimen/margin_12"
+                    android:id="@+id/tvSelectSociety"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:background="@drawable/border_layout"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="Get My Current Location"
+                        android:gravity="center|left"
+                        android:drawablePadding="@dimen/margin_12"
+                        android:padding="@dimen/margin_14"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/margin_12"
+                        android:id="@+id/locationText"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Save Address"
+                        android:id="@+id/btnUpdate"
+                        android:background="@color/white"
+                        android:textStyle="bold"
+                        android:paddingRight="@dimen/margin_10"
+                        android:gravity="right|center"
+                        android:textColor="@color/green"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:hint="Pin No"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edPinNo"
+                        android:text="411028"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Select Delivery Date"
+                    android:id="@+id/tvSelectDate"
+                    android:textStyle="bold"
+                    android:padding="@dimen/margin_10"
+                    android:drawablePadding="@dimen/margin_12"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/border_layout"
+                    android:paddingRight="@dimen/margin_10"
+                    android:textColor="@color/black"
+                    android:gravity="left|center"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Net Payable "
+                        android:textSize="@dimen/margin_16"
+                        android:paddingLeft="@dimen/margin_4"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1.2"
+                        android:text="Rs : 0.00"
+                        android:gravity="center"
+                        android:id="@+id/tvTotalPrice"
+                        android:textSize="@dimen/margin_16"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@color/float_transparent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:text="Pay now "
+                        android:id="@+id/btnCheckout"
+                        android:background="@color/colorPrimary"
+                        android:layout_margin="@dimen/margin_12"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

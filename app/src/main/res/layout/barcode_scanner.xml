@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_8"
+        android:id="@+id/backtext"
+        android:layout_height="wrap_content" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_40"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:hint="Shopkeepers mobile no"
+        android:textColor="@color/green_colorr"
+        android:background="@color/white"
+        android:id="@+id/ed_mobile_no"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:padding="@dimen/margin_6"
+        android:layout_height="wrap_content"
+        />
+
+
+</com.google.android.material.textfield.TextInputLayout>
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_above="@+id/btnAction"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:layout_height="130dp"
+                    android:background="@color/semitransparent" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/left"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/semitransparent" />
+
+                    <LinearLayout
+                        android:id="@+id/scannerLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_toEndOf="@+id/left"
+                        android:layout_toLeftOf="@id/right"
+                        android:layout_toRightOf="@id/left"
+                        android:layout_toStartOf="@+id/right"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/scannerBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:background="@color/green_colorr" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/right"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/semitransparent" />
+
+                    <ImageButton
+                        android:id="@+id/imgGallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="47dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:background="@color/semitransparent" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtBarcodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:text="No Barcode Detected"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtHotelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:text=""
+                android:textColor="@color/green_colorr"
+                android:textSize="@dimen/margin_18" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnAction"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+
+                    android:text="Cancel" />
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+
+                    android:text="Continue" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

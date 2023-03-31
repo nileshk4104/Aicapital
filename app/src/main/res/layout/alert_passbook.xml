@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_10"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="PASSBOOK ENTRY"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/tvMemberName"
+        android:text="Nilesh B Kalokhe"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_4"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:text="Date"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Saving"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Intrest"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="New Loan"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Re paid"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Total Loan"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Fine "
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="11-11-2020"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:id="@+id/tvDate"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:text="Rs 100"
+                android:id="@+id/tvSaving"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Rs 100"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:id="@+id/tvIntrest"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Rs 100"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:id="@+id/tvNewLoan"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Rs 100"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/tvRepaid"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Rs 100"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/tvTotalLoans"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:text="Rs 100"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/tvFine"
+                android:background="@drawable/border_layout"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_10"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

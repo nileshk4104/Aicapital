@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <!--colors for modern ui-->
+
+    <color name="placeholder_grey">#AAADC4</color>
+    <color name="placeholder_grey_20">#33AAADC4</color>
+
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#0088ff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+
+    <!--colros for card-->
+    <color name="colorAccent2">#cc3322</color>
+    <color name="black">#000000</color>
+    <color name="black2">#000010</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorGray1">#EEEEEE</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="colorGray2">#777777</color>
+    <color name="semitransparent">#9A000000</color>
+    <color name="colorPurpel">#FFcc00</color>
+    <color name="green_color">#00AA00</color>
+    <color name="green_colorr">#70CD00</color>
+    <color name="orange">#FF8800</color>
+    <color name="grenishble">#37cfb9</color>
+    <color name="green">#009900</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0099ff</color>
+    <color name="colorBlueDark2">#41009b</color>
+    <color name="colorBlueDark3">#07002b</color>
+    <color name="colorBluenila">#0011FF</color>
+    <color name="phonep">#FF047BD5</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen5">#101039</color>
+
+    <!-- dots active colors -->
+
+</resources>
