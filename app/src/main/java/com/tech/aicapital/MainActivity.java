@@ -257,7 +257,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
                 else if(submenu.equalsIgnoreCase("8"))
                 {
-                    Intent intent=new Intent(MainActivity.this, WithdrawActivity.class);
+                    // Withdrawal Activity
+                    Intent intent=new Intent(MainActivity.this, MyBankDetailsActivity.class);
                     startActivity(intent);
                     return false;
                 }
