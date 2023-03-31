@@ -170,14 +170,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         expandableList= (ExpandableListView) findViewById(R.id.navigationmenu);
         recyclerView= (RecyclerView) findViewById(R.id.recyclerView);
 
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intennt3=new Intent(MainActivity.this, AddNewCustomerActivity.class);
-//                startActivity(intennt3);
-//
-//            }
-//        });
+
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
